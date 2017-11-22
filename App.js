@@ -5,6 +5,7 @@ import { Font, AppLoading } from 'expo';
 import Title from './src/components/Title/Title';
 import Border from './src/components/Border/Border';
 import TimePicker from './src/components/TimePicker/TimePicker';
+import BasicSwitchExample from './src/components/Switch/Switch'
 
 import styles from './styles';
 
@@ -24,7 +25,10 @@ export default class App extends Component {
         <View style={styles.container}>
           <Title header="New Diet"/>
           <Border/>
-          {/*<TimePicker/>*/}
+          <View style={styles.time}>
+            <TimePicker/>
+            <BasicSwitchExample/>
+          </View>
         </View>
       ) :  <AppLoading/>
     )
