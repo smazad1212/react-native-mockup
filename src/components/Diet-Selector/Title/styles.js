@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import { COLOR_HEADING, FONT } from './../../styles/common';
+import { COLOR_HEADING, FONT } from './../../../styles/common';
 
 const title = StyleSheet.create({
   heading: {
