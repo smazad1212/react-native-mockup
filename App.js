@@ -6,6 +6,7 @@ import Title from './src/components/Title/Title';
 import Border from './src/components/Border/Border';
 import TimePicker from './src/components/TimePicker/TimePicker';
 import BasicSwitchExample from './src/components/Switch/Switch'
+import Label from './src/components/Label/Label';
 
 import styles from './styles';
 
@@ -29,6 +30,7 @@ export default class App extends Component {
             <TimePicker/>
             <BasicSwitchExample/>
           </View>
+          <Label/>
         </View>
       ) :  <AppLoading/>
     )
