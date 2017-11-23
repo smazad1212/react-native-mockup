@@ -6,7 +6,7 @@ const timePicker = StyleSheet.create({
   container: {
     display: 'flex',
     flexDirection: 'row',
-    paddingVertical: 20,
+    paddingTop: 15,
   },
   section: {
     display: 'flex',
