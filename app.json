@@ -1,5 +1,6 @@
 {
   "expo": {
+    "name": "Diet Scheduler",
     "sdkVersion": "22.0.0"
   }
 }
