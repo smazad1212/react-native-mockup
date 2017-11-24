@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, TouchableOpacity, Text } from 'react-native';
 
 import Title from './Title/Title'
 import Border from './Border/Border';
@@ -9,6 +9,10 @@ import Label from './Label/Label';
 import Reminder from './Reminder/Reminder'
 
 import styles from './styles';
+
+let handleSave = () => {
+  console.log("Saved")
+}
 
 const DietSelector = () => (
   <View>
@@ -20,6 +24,10 @@ const DietSelector = () => (
     </View>
     <Label/>
     <Reminder/>
+    <Border/>
+    <TouchableOpacity style={styles.button} onPress={this.handleSave}>
+      <Text style={styles.buttonText}>Save</Text>
+    </TouchableOpacity>
 
   </View>
 )

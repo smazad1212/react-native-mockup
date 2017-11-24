@@ -13,7 +13,6 @@ const label = StyleSheet.create({
     textDecorationLine: 'none',
     paddingHorizontal: 10,
     marginVertical: 15,
-
   }
 })
 
