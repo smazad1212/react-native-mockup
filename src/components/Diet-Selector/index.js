@@ -6,15 +6,11 @@ import Border from './Border/Border';
 import TimePicker from './TimePicker/TimePicker';
 import BasicSwitchExample from './Switch/Switch'
 import Label from './Label/Label';
-import Reminder from './Reminder/Reminder'
+import Reminder from './Reminder/Reminder';
 
 import styles from './styles';
 
-let handleSave = () => {
-  console.log("Saved")
-}
-
-const DietSelector = () => (
+const DietSelector = ({page, handlePage}) => (
   <View>
     <Title header="New Diet"/>
     <Border/>
@@ -25,7 +21,7 @@ const DietSelector = () => (
     <Label/>
     <Reminder/>
     <Border/>
-    <TouchableOpacity style={styles.button} onPress={this.handleSave}>
+    <TouchableOpacity style={styles.button} onPress={handlePage}>
       <Text style={styles.buttonText}>Save</Text>
     </TouchableOpacity>
 
